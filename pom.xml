@@ -21,17 +21,17 @@
     <url>${project.organization.url}/project/website</url>
 
     <modules>
-		<!-- Done in a dedicated Git repository 
-        <module>twj-website-base</module>
-		-->
+        <!-- Done in a dedicated Git repository 
+<module>twj-website-base</module>
+        -->
         <module>twj-website-impl</module>
-        <tawja.repo.envName>www</tawja.repo.envName>
     </modules>
 
-	<properties>
+    <properties>
         <!-- Environment name with tawja-env-* profiles -->
         <tawja.deploy.envName>test</tawja.deploy.envName>
-	</properties>
+        <tawja.repo.envName>www</tawja.repo.envName>
+    </properties>
 	
     <distributionManagement>
         <site>
@@ -192,6 +192,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
-     </pluginRepositories>
+    </pluginRepositories>
 
 </project>
