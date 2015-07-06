@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.tawja.website</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.06034749</version>
+        <version>2015.07.06231906</version>
         <!--<relativePath>../pom.xml</relativePath>-->
     </parent>
 	
     <groupId>org.tawja.website.impl</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.06034749</version>
+    <version>2015.07.06231906</version>
 	
     <packaging>pom</packaging>
 
@@ -25,7 +25,7 @@
         <module>twj-website-en</module>
         <module>twj-website-fr</module>
     </modules>
-
+    
     <distributionManagement>
         <site>
             <id>tawja-website</id>
@@ -53,7 +53,6 @@
                                     <artifactItem>
                                         <groupId>org.tawja.website</groupId>
                                         <artifactId>twj-website-base</artifactId>
-                                        <version>1.0.0-SNAPSHOT</version>
                                         <type>zip</type>
                                         <classifier>twj-grunt</classifier>
                                         <includes>**</includes>
@@ -76,7 +75,7 @@
                         <dependency>
                             <groupId>org.tawja.maven</groupId>
                             <artifactId>twj-maven-utils</artifactId>
-                            <version>1.0.0-SNAPSHOT</version>
+                        <version>${twj-maven-utils.version}</version>
                         </dependency>
                     </dependencies>
                     <executions>
@@ -106,7 +105,7 @@
                         </execution>
                     </executions>
                 </plugin>
-				<!-- TODO : Once stable - Working with Felix AND Karaf, apply the WAR and Web Bundle logic to other projects -->
+                <!-- TODO : Once stable - Working with Felix AND Karaf, apply the WAR and Web Bundle logic to other projects -->
                 <plugin>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>${maven-war-plugin.version}</version>
@@ -152,5 +151,20 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.tawja.maven</groupId>
+                <artifactId>twj-maven-utils</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.tawja.website</groupId>
+                <artifactId>twj-website-base</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 	
 </project>
