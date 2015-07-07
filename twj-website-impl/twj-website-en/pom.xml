@@ -71,15 +71,5 @@
             </plugin>
         </plugins>
     </build>
-	
-    <dependencies>
-        <dependency>                                    
-            <groupId>org.tawja.website</groupId>
-            <artifactId>twj-website-base</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <type>zip</type>
-            <classifier>twj-grunt</classifier>
-        </dependency>
-    </dependencies>
-	
+
 </project>
