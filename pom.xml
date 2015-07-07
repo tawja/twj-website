@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.06200902</version>
+        <version>2015.07.07021816</version>
         <!--<relativePath>../twj-parent/pom.xml</relativePath>-->
     </parent>
 	
     <groupId>org.tawja.website</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.06231906</version>
+    <version>2015.07.07032332</version>
 	
     <packaging>pom</packaging>
 
@@ -28,12 +28,24 @@
     </modules>
 
     <properties>
-        <!-- Environment name with tawja-env-* profiles -->
-        <tawja.deploy.envName>test</tawja.deploy.envName>
-        <tawja.repo.envName>prod</tawja.repo.envName>
         <!-- Inner Dependencies Versions -->
         <twj-maven-utils.version>1.0.0-SNAPSHOT</twj-maven-utils.version>
     </properties>
+	
+    <profiles>
+        <!-- Environment to sub-domains -->
+        <profile>
+            <id>tawja-env</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Environment name with tawja-env-* profiles -->
+                <tawja.deploy.envName>test</tawja.deploy.envName>
+                <tawja.repo.envName>prod</tawja.repo.envName>
+            </properties>
+        </profile>
+    </profiles>
 	
     <distributionManagement>
         <site>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	
+    <parent>
+        <groupId>org.tawja.website</groupId>
+        <artifactId>parent</artifactId>
+        <version>2015.07.07022826</version>
+        <!--<relativePath>../pom.xml</relativePath>-->
+    </parent>
+	
+    <groupId>org.tawja.website.dist</groupId>
+    <artifactId>parent</artifactId>
+    <version>2015.07.07032332</version>
+	
+    <packaging>pom</packaging>
+
+    <name>Tawja : WebSite : Distribution</name>
+
+    <url>${project.organization.url}/project/website/dist</url>
+
+    <modules>
+        <module>twj-dist-website-std</module>
+    </modules>
+
+    <distributionManagement>
+        <site>
+            <id>tawja-website</id>
+            <name>Tawja Documentation Website</name>
+            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.webPath}/${tawja.deploy.envName}/${organization.domain}/project/website/dist</url>
+        </site>
+    </distributionManagement>
+
+</project>
