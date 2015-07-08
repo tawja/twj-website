@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.08183918</version>
+        <version>2015.07.09002159</version>
         <!--<relativePath>../twj-parent/pom.xml</relativePath>-->
     </parent>
 	
     <groupId>org.tawja.website</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.08184758</version>
+    <version>2015.07.09003747</version>
 	
     <packaging>pom</packaging>
 
@@ -51,7 +51,7 @@
         <site>
             <id>tawja-website</id>
             <name>Tawja Documentation Website</name>
-            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.webPath}/${tawja.deploy.envName}/${organization.domain}/project/website</url>
+            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.site.webPath}/${tawja.deploy.envName}/${organization.domain}/project/website</url>
         </site>
         <snapshotRepository>
             <uniqueVersion>false</uniqueVersion>
