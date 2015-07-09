@@ -25,6 +25,8 @@
 <module>twj-website-base</module>
         -->
         <module>twj-website-impl</module>
+        <!-- Skipped by the factory during build, but used for versions update -->
+        <module>twj-dist</module>
     </modules>
 
     <properties>
