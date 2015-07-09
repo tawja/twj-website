@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.09015028</version>
+        <version>2015.07.09051423</version>
         <!--<relativePath>../twj-parent/pom.xml</relativePath>-->
     </parent>
 	
     <groupId>org.tawja.website</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.09021408</version>
+    <version>2015.07.09054402</version>
 	
     <packaging>pom</packaging>
 
@@ -25,6 +25,8 @@
 <module>twj-website-base</module>
         -->
         <module>twj-website-impl</module>
+        <!-- Skipped by the factory during build, but used for versions update -->
+        <module>twj-dist</module>
     </modules>
 
     <properties>
@@ -213,7 +215,7 @@
             <dependency>
                 <groupId>org.tawja.maven</groupId>
                 <artifactId>twj-maven-utils</artifactId>
-                <version>2015.07.09015028</version>
+                <version>2015.07.09051423</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
