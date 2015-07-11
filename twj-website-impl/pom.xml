@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.tawja.website</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.10165657</version>
+        <version>2015.07.11164020</version>
         <!--<relativePath>../pom.xml</relativePath>-->
     </parent>
 	
     <groupId>org.tawja.website.impl</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.10165657</version>
+    <version>2015.07.11164020</version>
 	
     <packaging>pom</packaging>
 
@@ -157,12 +157,12 @@
             <dependency>
                 <groupId>org.tawja.maven</groupId>
                 <artifactId>twj-maven-utils</artifactId>
-                <version>2015.07.10164706</version>
+                <version>2015.07.11162619</version>
             </dependency>
             <dependency>
                 <groupId>org.tawja.website</groupId>
                 <artifactId>twj-website-base</artifactId>
-                <version>2015.07.10165258</version>
+                <version>2015.07.11163600</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
