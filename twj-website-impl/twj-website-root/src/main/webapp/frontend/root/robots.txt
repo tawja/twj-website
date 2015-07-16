@@ -1,4 +1,11 @@
 User-agent: *
 
+Disallow: /api/
+Disallow: /*test*.html
+Disallow: /*legal-notice*.html
+Disallow: /*privacy-policy-*.html
+Disallow: /*terms-conditions-*.html
+
+Disallow: /fr/
 
 Sitemap: http://www.tawja.org/sitemap-global.xml
